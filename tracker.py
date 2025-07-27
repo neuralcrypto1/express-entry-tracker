@@ -4,8 +4,8 @@ import os
 
 URL = "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html"
 DATA_FILE = "latest_draw.txt"
-BOT_TOKEN = os.getenv("8386485222:AAHEASKbRq1jPg8f4szGcE-WNrqesil4lYM")
-CHAT_ID = os.getenv("1349892913")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def get_latest_draw():
     response = requests.get(URL)
